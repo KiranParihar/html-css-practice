@@ -177,7 +177,7 @@ a:hover {
 	.nav {
 		opacity: 0;
 		visibility: hidden;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -225,8 +225,7 @@ a:hover {
 	}
 
 	.header__title {
-		font-size: 3em;
-		line-height: 50px;
+		font-size: 2.813rem;
 	}
 
 }
@@ -268,6 +267,67 @@ a:hover {
 
 	.header__title {
 		font-size: 1.8rem
+	}
+
+}
+
+
+
+/****************/
+/*   FEATURES   */
+/****************/
+.features {
+	max-height: 700px;
+	padding: 8em 0 3em;
+}
+
+.features__inner {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.features__item {
+	box-sizing: border-box;
+	max-width: 33%;
+	margin-bottom: 4.643em;
+	padding: 0 1.071em;
+	font-size: 0.875rem;
+	text-align: center;
+}
+
+.features__icon {
+	margin-bottom: 1.071em;
+}
+
+.features__title {
+	font-size: 0.875rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.features__descr {
+	line-height: 1.500em;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.features__inner {
+		justify-content: center;
+	}
+
+	.features__item {
+		max-width: 45%;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.features__item {
+		max-width: 80%;
 	}
 
 }
