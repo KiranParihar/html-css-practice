@@ -18,6 +18,12 @@ a:hover {
 	color: #e84545;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -60,12 +66,6 @@ a:hover {
 
 .nav {
 	transition: all .5s ease;
-}
-
-.nav__list {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
 }
 
 .nav__item {
@@ -331,6 +331,14 @@ a:hover {
 
 }
 
+@media screen and (max-width: 320px) {
+
+	.features__item {
+		max-width: 100%;
+	}
+
+}
+
 
 
 /**************/
@@ -412,6 +420,126 @@ a:hover {
 	.works__item {
 		width: 100%;
 		border-right: 0;
+	}
+
+}
+
+
+
+/**************/
+/*    TEAM    */
+/**************/
+.team {
+	padding: 6.667em 0 ;
+}
+
+.team__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.team__item {
+	max-width: 18.000em;
+}
+
+.team__photo {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.team__title {
+	margin: 0.909em 0 0.3em;
+	font-size: 1.375rem;
+	font-weight: 400;
+	color: #2d3033;
+}
+
+.team__subtitle {
+	margin: 0;
+	margin-bottom: 1.3em;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	color: #e84545;
+}
+
+.team__descr {
+	margin-bottom: 2em;
+	font-size: 0.875rem;
+	line-height: 1.600em;
+}
+
+.social-icons__item	{
+	display: inline-block;
+	width: 2.222em;
+	height: 2.222em;
+	margin-right: 3px;
+	font-size: 1.125rem;
+	line-height: 2.222em;
+	text-align: center;
+	color: #c6cacc;
+	border: 1px solid #e8ecee;
+	border-radius: 2px;
+}
+
+.social-icons__item:last-child {
+	margin-right: 0;
+}
+
+.social-icons__item:hover {
+	color: #fff;
+	background-color: #e84545;
+	border-color: #e84545;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.team__inner {
+		justify-content: space-around;
+	}
+
+	.team__item {
+		max-width: 40%;
+		margin-bottom: 4em;
+		text-align: center;
+	}
+
+	.team__item:nth-child(3),
+	.team__item:nth-child(4) {
+		margin-bottom: 0;
+	}
+
+	.team__photo {
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.team__item {
+		max-width: 55%;
+	}
+
+	.team__item:nth-child(3) {
+		margin-bottom: 4em;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+
+	.team__item {
+		max-width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+
+	.team__item {
+		max-width: 100%;
 	}
 
 }
