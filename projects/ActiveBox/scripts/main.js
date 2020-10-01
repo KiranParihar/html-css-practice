@@ -13,4 +13,13 @@ $(document).ready(function() {
 		nav.toggleClass('open');
 	});
 
+
+	// Slider
+	$('.slider').slick({
+		autoplay: true,
+		arrows: false,
+		dots: true,
+		draggable: false
+	});
+
 });
