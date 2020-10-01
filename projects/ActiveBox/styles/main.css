@@ -36,6 +36,7 @@ ul {
 	font-size: 0.813rem;
 	font-weight: 700;
 	text-transform: uppercase;
+	color: #fff;
 	background-color: #e84545;
 	border-radius: 3px;
 }
@@ -652,7 +653,7 @@ ul {
 	}
 
 	.testimonials__quote {
-		margin-bottom: 0;
+		margin-bottom: 0.5em;
 	}
 
 	.slick-dots {
@@ -682,4 +683,32 @@ ul {
 		bottom: 6%;
 	}
 
+}
+
+
+
+/**********************/
+/*      DOWNLOAD      */
+/**********************/
+.download {
+	padding: 3em 0;
+}
+
+.download__inner {
+	color: #2d3033;
+	text-align: center;
+}
+
+.download__title {
+	margin-bottom: 0;
+	font-size: 1.750em;
+	font-weight: 400;
+}
+
+.download__descr {
+	margin-bottom: 2.5em;
+	font-size: 0.9em;
+	font-weight: 700;
+	line-height: 1.643em;
+	text-transform: uppercase;
 }
